@@ -20,7 +20,6 @@ export default defineType({
 			name:'link',
 			title:'Link',
 			placeholder: 'https://theirsocial.com/profile',
-
 			type: 'url'
 		})
   ],
