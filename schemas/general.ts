@@ -8,7 +8,7 @@ export default defineType({
     defineField({
       name: 'preset',
       title: 'Preset ID',
-      description: "You can have multiple presets, Set the one you want to use to 'main'",
+      description: "You can have multiple presets, Set the one you want to use to 'main' and change the one you're not using to something e",
       type: 'string',
     }),
     defineField({
@@ -25,11 +25,13 @@ export default defineType({
 					name: 'good',
 					title: 'Good Counter',
 					type: 'number',
+					validation: (rule) => rule.required().min(1),
 				},
 				{
 					name: 'bad',
 					title: 'Corruption Counter',
 					type: 'number',
+					validation: (rule) => rule.required().min(1),
 				},
 			]
 		})
