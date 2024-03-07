@@ -17,6 +17,16 @@ export default defineType({
       type: 'image',
     }),
 		defineField({
+			name:'time',
+			title:'Stream Time',
+			description:'Central US Time',
+			type:'object',
+			fields:[
+				defineField({name:'date',title:'Date',type:'datetime'}),
+				defineField({name:'active',title:'Is active?',type:'boolean'}),
+			]
+		}),
+		defineField({
 			name:'stats',
 			title:'Statistics',
 			type:'object',
