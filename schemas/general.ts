@@ -23,6 +23,43 @@ export default defineType({
       type: 'image',
     }),
     defineField({
+      name: 'fanart',
+      title: 'Fan Art',
+      type: 'array',
+      of: [
+        defineField({
+          name: 'fanart-item',
+          type: 'reference',
+          to: [{type: 'home_art'}],
+        }),
+      ],
+    }),
+    defineField({
+      name: 'nikart',
+      title: 'Nik Art',
+      type: 'array',
+      of: [
+        defineField({
+          name: 'nikart-item',
+          type: 'reference',
+          to: [{type: 'home_art'}],
+        }),
+      ],
+    }),
+    defineField({
+      name: 'models',
+      title: 'Models',
+      type: 'array',
+      of: [
+        defineField({
+          name: 'models-item',
+          type: 'reference',
+          to: [{type: 'models'}],
+        }),
+      ],
+    }),
+
+    defineField({
       name: 'time',
       title: 'Stream Time',
       description: 'Central US Time',
