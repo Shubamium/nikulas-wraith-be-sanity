@@ -6,6 +6,8 @@ import general from './general'
 import homeArt from './home-art'
 import models from './models'
 import nikArt from './nik-art'
+import orders from './orders'
+import products from './products'
 import subscribtionList from './subscribtion-list'
 import vip from './vip'
 export const schemaTypes = [
@@ -19,4 +21,6 @@ export const schemaTypes = [
   galleryArt,
   homeArt,
   subscribtionList,
+  products,
+  orders,
 ]
