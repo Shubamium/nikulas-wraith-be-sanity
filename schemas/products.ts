@@ -20,6 +20,13 @@ export default defineType({
       type: 'text',
     }),
     defineField({
+      name: 'hide',
+      title: 'Hide',
+      description:
+        'Instead of deleting the product and orders, you can hide the product so that people cannot see it',
+      type: 'boolean',
+    }),
+    defineField({
       name: 'stock',
       type: 'number',
     }),

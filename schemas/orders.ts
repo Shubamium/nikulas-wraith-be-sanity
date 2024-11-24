@@ -29,7 +29,7 @@ export default defineType({
         }),
         defineField({
           name: 'address',
-          type: 'string',
+          type: 'text',
         }),
       ],
     }),
@@ -63,7 +63,13 @@ export default defineType({
         ],
       },
     }),
-
+    defineField({
+      name: 'status_text',
+      title: 'Status Messsage',
+      type: 'string',
+      description:
+        'This will show up, when buyer enter their order id and when you update the status, it will show up on the email sent ',
+    }),
     defineField({
       name: 'total',
       description: 'The amount paid before the paypal fee',
