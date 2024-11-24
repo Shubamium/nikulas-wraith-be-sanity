@@ -89,8 +89,21 @@ export default defineType({
             {type: 'reference', name: 'item', to: [{type: 'products'}]},
             {type: 'number', name: 'quantity'},
           ],
+          preview: {
+            select: {
+              title: 'item.name',
+              subtitle: 'quantity',
+              media: 'item.image',
+            },
+          },
         }),
       ],
     }),
   ],
+  preview: {
+    select: {
+      title: 'buyer.name',
+      subtitle: 'status',
+    },
+  },
 })
