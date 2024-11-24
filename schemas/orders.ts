@@ -68,7 +68,7 @@ export default defineType({
       title: 'Status Messsage',
       type: 'string',
       description:
-        'This will show up, when buyer enter their order id and when you update the status, it will show up on the email sent ',
+        'This will show up when buyer enter their order id, when you update the status it will show up on the email sent ',
     }),
     defineField({
       name: 'total',
