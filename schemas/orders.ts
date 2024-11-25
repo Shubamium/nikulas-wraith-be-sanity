@@ -57,8 +57,8 @@ export default defineType({
             value: 'shipped',
           },
           {
-            title: 'Confirmation',
-            value: 'confirmed',
+            title: 'Completed',
+            value: 'completed',
           },
         ],
       },

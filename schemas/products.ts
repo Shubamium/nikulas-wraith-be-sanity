@@ -27,6 +27,11 @@ export default defineType({
       type: 'boolean',
     }),
     defineField({
+      name: 'hide_stock',
+      title: 'Hide Stock',
+      type: 'boolean',
+    }),
+    defineField({
       name: 'stock',
       type: 'number',
     }),
