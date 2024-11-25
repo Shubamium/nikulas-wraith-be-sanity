@@ -23,6 +23,11 @@ export default defineType({
       type: 'image',
     }),
     defineField({
+      name: 'shipping_fee',
+      title: 'Shop Shipping Fee',
+      type: 'number',
+    }),
+    defineField({
       name: 'fanart',
       title: 'Fan Art',
       type: 'array',
