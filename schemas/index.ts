@@ -1,4 +1,5 @@
 import alert from './alert'
+import codes from './codes'
 import fanArt from './fan-art'
 import gallery from './gallery'
 import galleryArt from './gallery-art'
@@ -23,4 +24,5 @@ export const schemaTypes = [
   subscribtionList,
   products,
   orders,
+  codes,
 ]
