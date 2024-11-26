@@ -10,6 +10,7 @@ export default defineType({
       name: 'code',
       title: 'Code',
       type: 'string',
+      validation: (rule) => rule.uppercase(),
     }),
     defineField({
       name: 'amount',

@@ -28,6 +28,11 @@ export default defineType({
       type: 'number',
     }),
     defineField({
+      name: 'tax',
+      title: 'Shop Tax in %',
+      type: 'number',
+    }),
+    defineField({
       name: 'fanart',
       title: 'Fan Art',
       type: 'array',
