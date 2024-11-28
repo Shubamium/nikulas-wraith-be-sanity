@@ -24,6 +24,10 @@ export default defineType({
           type: 'string',
         }),
         defineField({
+          name: 'nickname',
+          type: 'string',
+        }),
+        defineField({
           name: 'email',
           type: 'string',
         }),
