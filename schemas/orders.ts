@@ -53,6 +53,14 @@ export default defineType({
             value: 'processed',
           },
           {
+            title: 'Error',
+            value: 'error',
+          },
+          {
+            title: 'Cancelled',
+            value: 'cancelled',
+          },
+          {
             title: 'Shipping',
             value: 'shipping',
           },
