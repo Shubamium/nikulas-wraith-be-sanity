@@ -32,6 +32,19 @@ export default defineType({
       type: 'boolean',
     }),
     defineField({
+      name: 'is_digital',
+      title: 'Is digital?',
+      description: 'Please provide a downloadable link to the item',
+      type: 'boolean',
+    }),
+    defineField({
+      name: 'download',
+      title: 'Download Link',
+      description: `Make sure it's not an expirable link`,
+      type: 'string',
+      hidden: ({parent}) => !parent?.is_digital,
+    }),
+    defineField({
       name: 'stock',
       type: 'number',
     }),
