@@ -13,6 +13,12 @@ export default defineType({
       type: 'string',
     }),
     defineField({
+      name: 'video',
+      title: 'Main Video',
+      description: 'Video file, .webm format is recommended',
+      type: 'file',
+    }),
+    defineField({
       name: 'schedules',
       title: 'Schedules',
       type: 'image',

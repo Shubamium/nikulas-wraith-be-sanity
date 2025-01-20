@@ -1,4 +1,5 @@
 import alert from './alert'
+import clips from './clips'
 import codes from './codes'
 import fanArt from './fan-art'
 import gallery from './gallery'
@@ -13,6 +14,7 @@ import subscribtionList from './subscribtion-list'
 import vip from './vip'
 export const schemaTypes = [
   general,
+  clips,
   vip,
   // fanArt,
   // nikArt,
